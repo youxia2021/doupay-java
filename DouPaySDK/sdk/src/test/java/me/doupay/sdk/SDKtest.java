@@ -150,8 +150,6 @@ public class SDKtest {
     public void withdraw() {
         initAllParameters();
         String orderNo = "SHYH" + String.valueOf(System.currentTimeMillis());
-        System.out.println("heheh");
-        System.out.println("heheh");
         BaseVo<WithdrawResponse> baseVo = PaymentInfo.withdraw("TEQrvHyU54YibVHMGb7475n8y3mXBofaaR", "5", CoinNameEnum.USDT, orderNo, orderNo,"5000",OrderTypeCodeEnum.BY_MONEY,CurrencyCodeEnum.USD);
         if (baseVo.getCode() == 200) {
             System.out.println("-------------------------" + baseVo.getData().toString());
