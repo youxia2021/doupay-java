@@ -79,7 +79,7 @@ public class SDKtest {
         initAllParameters();
         String orderNo = "SJDD" + String.valueOf(System.currentTimeMillis());
 
-        BaseVo<PayResponseData> baseVo = PaymentInfo.pay("","100", CoinNameEnum.USDT, CurrencyCodeEnum.CNY, "17701278888", orderNo,
+        BaseVo<PayResponseData> baseVo = PaymentInfo.pay("","22", CoinNameEnum.USDT, CurrencyCodeEnum.CNY, "17701278888", orderNo,
                 "我很好啊啊", "", "", OrderTypeCodeEnum.BY_AMOUNT);
         if (baseVo.getCode() == 200) {
             System.out.println("-------------------------" + baseVo.getData().toString());
@@ -103,7 +103,7 @@ public class SDKtest {
     @Test
     public void getOrderInfo() {
         initAllParameters();
-        BaseVo<OrderInfoResponseData> baseVo = PaymentInfo.getOrderInfo("ZF202107270735102531358110");
+        BaseVo<OrderInfoResponseData> baseVo = PaymentInfo.getOrderInfo("ZF202107270854390198801255");
         if (baseVo.getCode() == 200) {
             System.out.println("-------------------------" + baseVo.getData().toString());
         }else {
