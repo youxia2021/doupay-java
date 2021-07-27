@@ -532,10 +532,11 @@ public class PaymentInfo {
             String protocolName = jsonObject.getString("protocolName");
             String price = jsonObject.getString("price");
             String address = jsonObject.getString("address");
+            String money = jsonObject.getString("money");
             String amountPaid = jsonObject.getString("amountPaid");
             Integer paymentStatus = jsonObject.getInt("paymentStatus");
             boolean result = jsonObject.getBoolean("result");
-            MakeUpCallBackResponse make = new MakeUpCallBackResponse(orderCode,type,coinName,protocolName,price,address,amountPaid,result,paymentStatus);
+            MakeUpCallBackResponse make = new MakeUpCallBackResponse(orderCode,type,coinName,protocolName,price,address,amountPaid,result,paymentStatus,money);
             makeUpCallBackResponseCallBack.onFinish(make);
         }
     }
