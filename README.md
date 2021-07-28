@@ -30,4 +30,4 @@
 
 #### secret为商户管理后台创建app得到的,appid为创建app得到的,privateKey为自己的私钥,publicKey为交换公钥后得到的平台公钥,expireTime为订单过期时间,秒为单位
 
-sdk中各方法请求和响应参数,请参照[wiki](https://github.com/doupay/doupay-java/wiki)
+### sdk中各方法请求和响应参数,请参照 [wiki](https://github.com/doupay/doupay-java/wiki)
